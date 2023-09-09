@@ -54,7 +54,7 @@
     text-transform: capitalize;
     display: flex;
     margin: 10px 0px 0px 10px;
-    padding: 10px;
+    padding: 13px 10px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -133,13 +133,19 @@
     padding: 10px;
 }
 
-.user-details .user-details-head span {
+.user-details .user-details-head span , .user-details .user-details-head .user-details-head-span{
     margin: 0 25px;
 }
 
-.user-details .user-details-head span p {
+.user-details .user-details-head .user-details-head-span p{
     font-size: 16px;
-    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.user-details .user-details-head .user-details-head-span p:nth-child(even){
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgb(35, 32, 32);
 }
 
 .user-details .user-details-head span button {
@@ -183,6 +189,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 10px;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: capitalize;
 }
