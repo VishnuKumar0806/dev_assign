@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* app.js */
+
+.main-page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sub-page {
+    margin: 10px 0;
+    width: 84vw;
+}
+
+/* menupage.js */
+
+.menu-bar {
+    position: relative;
+    width: 14vw;
+    height: 97vh;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 0 20px 20px 0;
+}
+
+.menu-bar .profile-details {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.profile-details img {
+    width: 80px;
+    height: auto;
+}
+
+.profile-details p {
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+}
+
+.menu-details {
+    color: white;
+    height: auto;
+}
+
+.menu-details li {
+    text-transform: capitalize;
+    display: flex;
+    margin: 10px 0px 0px 10px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.menu-details li:hover {
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+}
+
+.menu-details li:active {
+    background-color: white;
+    color: gray;
+}
+
+.menu-details span {
+    margin-right: 10px;
+}
+
+/* company page */
+
+.company-head {
+    position: relative;
+    height: 10vh;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-head img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.company-head img:nth-child(2) {
+    background-color: lightgreen;
+}
+
+/* user-details.js */
+
+.user-details {
+    position: relative;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-radius: 20px;
+}
+
+.user-details div {
+    display: block;
+}
+
+.user-details .user-details-head {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 20vh;
+    padding-left: 20px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgba(4, 3, 3, 0.1);
+    margin-top: 30px;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.user-details .user-details-head img {
+    position: relative;
+    width: 100px;
+    top: -20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.user-details .user-details-head span {
+    margin: 0 25px;
+}
+
+.user-details .user-details-head span p {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.user-details .user-details-head span button {
+    border: 0;
+    outline: 0;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.user-details .user-details-head span:nth-child(6) {
+    position: absolute;
+    right: 100px;
+}
+
+.user-details .user-other-details {
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.user-details .user-other-details .sub-details {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgba(4, 3, 3, 0.1);
+    height: 50vh;
+    width: 40vw;
+    margin: 1%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.user-other-details .sub-details span {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
