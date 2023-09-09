@@ -93,6 +93,9 @@
 
 .company-head img:nth-child(2) {
     background-color: lightgreen;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
 }
 
 /* user-details.js */

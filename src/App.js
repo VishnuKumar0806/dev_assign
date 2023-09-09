@@ -3,7 +3,6 @@ import CompanyName from "./Components/CompanyName";
 import MenuPage from "./Components/MenuPage";
 import './Components/Style.css';
 import UserDetails from "./Components/UserDetails";
-
 function App() {
   return (
     <div className="main-page">
