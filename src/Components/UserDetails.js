@@ -1,17 +1,17 @@
 import React from "react";
-import Profile from '../Images/food.png';
+import Profile from '../Images/profile-photo.png';
 
 export default function UserDetails() {
     const primary_deatils = {
         'name': 'vishnu',
         'age group': '20-30',
-        'contact': 9876543210,
+        'contact': '+91 9876543210',
         'e mail': 'vishnu31@gmail.com',
     }
     const userdetails = {
         'name': 'vishnu',
         'city': 'madurai',
-        'zip code': 625012,
+        'zip code': '625012',
         'state': 'tamil-nadu',
         'country': 'india',
         'religion': 'hindu',
@@ -30,7 +30,7 @@ export default function UserDetails() {
     return (
         <div className="user-details">
             <div className="user-details-head">
-                <img src={Profile} alt="user profile" />
+                <img src={Profile} alt="user profile" className="user-profile" />
                 {
                     Object.entries(primary_deatils).map(([value, key]) => {
                         return (
@@ -42,7 +42,7 @@ export default function UserDetails() {
                     })
                 }
                 <span>
-                    <button>Edit</button>
+                    <button className="ui button">Edit</button>
                 </span>
             </div>
             <div className="user-other-details">
@@ -50,8 +50,8 @@ export default function UserDetails() {
                     {
                         Object.entries(userdetails).map(([value, key]) => {
                             return (
-                                <span>
-                                    <label>{value}</label>
+                                <span className="sub-user-details">
+                                    <p>{value}</p>
                                     <p>:</p>
                                     <p>{key}</p>
                                 </span>
@@ -63,8 +63,8 @@ export default function UserDetails() {
                     {
                         Object.entries(other_details).map(([value, key]) => {
                             return (
-                                <span>
-                                    <label>{value}</label>
+                                <span className="sub-user-details">
+                                    <p>{value}</p>
                                     <p>:</p>
                                     <p>{key}</p>
                                 </span>

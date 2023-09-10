@@ -22,27 +22,27 @@
 .menu-bar {
     position: relative;
     width: 14vw;
-    height: 97vh;
-    margin: 10px;
+    height: 100vh;
     background-color: gray;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .menu-bar .profile-details {
     display: grid;
     place-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .profile-details img {
     width: 80px;
     height: auto;
+    margin: 10px 0;
 }
 
 .profile-details p {
     font-size: 20px;
+    word-spacing: 4px;
     color: white;
-    font-weight: 200;
 }
 
 .menu-details {
@@ -52,21 +52,14 @@
 
 .menu-details li {
     text-transform: capitalize;
-    display: flex;
+    list-style: none;
     margin: 10px 0px 0px 10px;
-    padding: 13px 10px;
+    padding: 13px 15px;
     border-radius: 10px 0 0 10px;
 }
 
 .menu-details li:hover {
-    background-color: white;
-    color: gray;
     cursor: pointer;
-}
-
-.menu-details li:active {
-    background-color: white;
-    color: gray;
 }
 
 .menu-details span {
@@ -76,25 +69,24 @@
 /* company page */
 
 .company-head {
-    position: relative;
     height: 10vh;
-    margin: 10px;
+    margin: 10px 10px 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.company-head img {
-    width: 50px;
+.company-head .company-logo {
+    width: 100px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .company-head img:nth-child(2) {
     background-color: lightgreen;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
     padding: 10px;
 }
 
@@ -104,91 +96,83 @@
     position: relative;
     height: auto;
     margin: 5px;
-    padding: 10px;
+    padding: 10px 0;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     border-radius: 20px;
-}
-
-.user-details div {
-    display: block;
 }
 
 .user-details .user-details-head {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 20vh;
-    padding-left: 20px;
+    padding-left: 10px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgba(4, 3, 3, 0.1);
-    margin-top: 30px;
-    border-radius: 5px;
-    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 80px;
+    margin: 10px 25px;
 }
 
-.user-details .user-details-head img {
+.user-details .user-details-head .user-profile {
     position: relative;
     width: 100px;
-    top: -20px;
+    top: -10px;
+    height: 100px;
+    object-fit: contain;
     border-radius: 10px;
     padding: 10px;
 }
 
-.user-details .user-details-head span , .user-details .user-details-head .user-details-head-span{
-    margin: 0 25px;
-}
-
-.user-details .user-details-head .user-details-head-span p{
+.user-details .user-details-head .user-details-head-span{
     font-size: 16px;
+    margin: 0 20px;
     text-transform: capitalize;
 }
 
-.user-details .user-details-head .user-details-head-span p:nth-child(even){
-    margin-top: 8px;
+.user-details .user-details-head .user-details-head-span p:nth-child(even) {
     font-size: 17px;
-    color: rgb(35, 32, 32);
-}
-
-.user-details .user-details-head span button {
-    border: 0;
-    outline: 0;
-    background-color: grey;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    width: 130px;
-    font-size: 14px;
-    text-transform: uppercase;
 }
 
 .user-details .user-details-head span:nth-child(6) {
     position: absolute;
-    right: 100px;
+    right: 80px;
 }
 
 .user-details .user-other-details {
     height: auto;
     border-radius: 20px;
     margin: 20px 0;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .user-details .user-other-details .sub-details {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgba(4, 3, 3, 0.1);
-    height: 50vh;
+    height: 55vh;
     width: 40vw;
-    margin: 1%;
-    margin-top: 10px;
+    margin: 10px;
     border-radius: 20px;
 }
 
-.user-other-details .sub-details span {
+.user-other-details .sub-details .sub-user-details {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 15px;
     text-transform: capitalize;
+}
+
+/* media queries */
+
+@media screen and (max-width: 400px) {
+    .menu-bar {
+        display: none;
+    }
+
+    .hambergur-menu-bar {
+        display: block;
+    }
 }
